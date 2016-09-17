@@ -1,28 +1,18 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>{{ page.title }}</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-        		<li><a href="/blog">Blog</a></li>
-            <li><a href="/about">About</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
+<html lang="en">
 
-			{{ content }}
+{% include head.html %}
 
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:aaronguo@tencent.com">Email</a></li>
-        		<li><a href="github.com/tencentmap">Our Github</a></li>
-			</ul>
-		</footer>
-	</body>
+<body>
+
+    {% include nav.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+    {% include ga.html %}
+
+</body>
+
 </html>
