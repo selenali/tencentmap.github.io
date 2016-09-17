@@ -42,10 +42,10 @@ ul.posts li {
     list-style: none;
 }
 
-post-title {
-  color: #333;
-}
-
 post-date {
   color: #999;
+}
+
+post-title {
+  color: #333;
 }
