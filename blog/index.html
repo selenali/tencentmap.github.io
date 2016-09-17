@@ -6,6 +6,6 @@ title: Tencent Map's Blog
 <ul class="posts">
 
   {% for post in site.posts %}
-    <li><span><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></span>  {{ post.date | date_to_string }}</li>
+    <li style="post-date"><span><a style="post-title" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></span>  {{ post.date | date_to_string }}</li>
   {% endfor %}
 </ul>
