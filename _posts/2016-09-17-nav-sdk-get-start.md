@@ -30,7 +30,7 @@ Studio下的腾讯地图导航SDK的工程配置方法。
 将下载到的压缩包解压，将"TencentNaviSDK_*.jar"（该jar包命名规则为
 TencentNaviSDK_vX.X.X.jar, X.X.X为三位版本号）拷贝到工程目录的libs文件夹下，此外，您还需要将对应平台的so文件拷贝到工程目录libs文件夹下对应的平台目录，如下图所示：
 
-![](media/image1.png)
+![](/media/image1.png)
 
 注：libtxnavengine.so为导航引擎库；libwebpJNI.so为wepb库，用于路口放大图、电子眼放大图的解码。导航SDK中不含语音播放库，如果使用语音导航，请使用自己的语音库进行语音解码。
 
@@ -39,19 +39,19 @@ TencentNaviSDK_vX.X.X.jar, X.X.X为三位版本号）拷贝到工程目录的lib
 方法一：将下载到的压缩包解压，将下载到的压缩包解压，将"TencentNaviSDK_*.jar"（该jar包命名规则为
 TencentNaviSDK\_vX.X.X.jar, X.X.X为三位版本号）拷贝到app/libs/文件夹下，右键选择"Add As Library"。
 
-![](media/image2.png)
+![](/media/image2.png)
 
 此外，需要您在app/src/main/目录下新建jniLibs目录，根据平台的不同将so文件放到对应平台的目录下，如图所示：
 
-![](media/image3.png)
+![](/media/image3.png)
 
 方法二：在"Project Structure"中选择"Dependencies", 点击"+"选择"File dependency", 选择要添加到工程的jar包即完成开发包的导入，如图所示：
 
-![](media/image4.png)
+![](/media/image4.png)
 
 此外，需要您在app/src/main/目录下新建jniLibs目录，根据平台的不同将so文件放到对应平台的目录下，如图所示：
 
-![](media/image3.png)
+![](/media/image3.png)
 
 注：libtxnavengine.so为导航引擎库；libwebpJNI.so为wepb库，用于路口放大图、电子眼放大图的解码。导航SDK中不含语音播放库，如果使用语音导航，请使用自己的语音库进行语音解码。
 
@@ -98,7 +98,7 @@ TencentNaviSDK\_vX.X.X.jar, X.X.X为三位版本号）拷贝到app/libs/文件�
 
 导航SDK主要负责导航参数设置，如起点，终点等，然后启动异步线程规划路线，路线规划成功后，把导航路线给导航引擎。导航引擎结合定位SDK，进行导航，把导航信息回调给导航SDK。导航SDK根据回调，使用地图SDK进行导航过程的展示。流程图如下：
 
-![](media/image5.png)
+![](/media/image5.png)
 
 ###### TencentNavigationManager类
 
@@ -170,7 +170,7 @@ tencentNaviManager.calculateRoute();
 使用SearchRouteTask进行异步的路线规划，SearchRouteTask的详情请参考API文档。  
 Demo规划的路线如图所示：
 
-![](media/image6.png)
+![](/media/image6.png)
 
 ###### 开始导航与结束导航
 
@@ -186,19 +186,19 @@ tencentNaviManager.stopNavi();
 ```
 导航过程中的地图展示：
 
-![](media/image7.png)
+![](/media/image7.png)
 
-![](media/image8.png)
+![](/media/image8.png)
 
 导航资源包括：
 
-导航定位图标：  ![](media/image9.png)
+导航定位图标：  ![](/media/image9.png)
 
-实时路况信息（彩虹蚯蚓）：  ![](media/image10.png)
+实时路况信息（彩虹蚯蚓）：  ![](/media/image10.png)
 
-走过的路置灰:  ![](media/image11.png)
+走过的路置灰:  ![](/media/image11.png)
 
-路口放大图：  ![](media/image12.png)
+路口放大图：  ![](/media/image12.png)
 
 其他的资源如车道线信息，电子眼放大图等，请您参考API文档。
 
